@@ -1,0 +1,2 @@
+Q1. What is difference between nfa and dfa? 
+Q2. Write short notes on Moore Machine.

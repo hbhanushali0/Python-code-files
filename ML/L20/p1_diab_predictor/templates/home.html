@@ -1,0 +1,30 @@
+
+<html>
+    <head>
+        <title> Diabetes predictor App </title>
+        <style>
+            * { font-size:40px;}
+            </style>
+        </head>
+    <body>
+    <center>
+    <h1> Fill the details </h1>
+    <form action = "/check" method = "POST">
+<input type = "number" name = "fs" placeholder = "enter fasting sugar" required>
+    <br><br>
+    
+    <h2> Frequent Urination </h2>
+    <input type = "radio" name = "r1" value = "yes"> Yes </input>
+    <input type = "radio" name = "r1" value = "no" checked> NO </input>
+    <br><br>
+    
+    <input type = "submit" value = "check">
+    
+        
+    </form>
+     {{ msg }}
+     
+    </center>
+    </body>
+
+    </html>

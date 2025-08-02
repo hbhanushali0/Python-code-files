@@ -1,0 +1,41 @@
+#import lib
+import pandas as pd 
+from nltk import word_tokenize
+from nltk.corpus import stopwords
+from string import punctuation
+from nltk.stem import PorterStemmer
+from sklearn.feature_extraction.text import TfidfVectorizer
+
+from pickle import *
+
+
+
+ps = PorterStemmer()
+#text cleaning
+def clean_data(txt):
+    txt = txt.lower()
+    txt = word_tokenize(txt)
+    txt = [t for t in txt if t not in punctuation]
+    txt = [t for t in txt if t not in stopwords.words('english')]
+    txt = [ps.stem(t) for t in txt]
+    txt = " ".join(txt)
+    return txt
+
+
+
+
+#restore the model and restore the vector
+f = open('vector.pkl','rb')
+tv = load(f)
+f.close()
+
+f = open('model.pkl','rb')
+model = load(f)
+f.close()
+
+#predict
+txt = input("enter text ")
+ctxt = clean_data(txt)
+vtxt = tv.transform([ctxt])
+res = model.predict(vtxt)
+print(res)

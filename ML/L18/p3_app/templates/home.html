@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title> Password Generator App </title>
+        <style>
+            *{ font-size:40px;}
+            </style>
+        
+        </head>
+        <body>
+            
+            
+            <center>
+                <h1> Password Generator </h1>
+                <form action = "/generate" method = "POST">
+                    <select name = "length">
+                        
+                        <option value = "6"> 6 </option>
+                        <option value = "7"> 7 </option>
+                        <option value = "8"> 8 </option>
+                        <option value = "9"> 9 </option>
+                    </select>
+                    <br><br>
+                    
+                    <input type = "checkbox" name = "uc"> UpperCase </input>
+                    <br><br>
+                    <input type = "checkbox" name = "di"> Digits </input>
+                    <br><br>
+                    
+                    <input type = "text" name = "em" placeholder = "enter your email " required>
+                        <br><br>
+                        
+                        <input type = "submit" value = "Generate">
+                        
+                    </form>
+                {{ msg }}
+                </center>
+            </body>
+        
+    </html>

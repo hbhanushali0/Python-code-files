@@ -1,0 +1,32 @@
+<html>
+<head>
+<title> Pizza Order App </title>
+<style>
+    * {font-size:40px; font-family:Calibri;}
+    </style>
+</head>
+<body>
+<center>
+    <h1> Pizza Order App </h1>
+    <form action = "/submit" method = "POST">
+        <input type = "text"  placeholder = "enter name " name = "na" required>
+            <br><br>
+            <input type = "radio" name = "s1" value = "small">small</input>
+            <input type = "radio" name = "s1" value = "medium">medium</input>
+            <input type = "radio" name = "s1" value = "large" checked>large</input>
+            <br><br>
+            
+            <input type = "checkbox" name = "t1" value = "tomato">tomato</input>
+            <input type = "checkbox" name = "o1" value = "Onion">Onion</input>
+            <input type = "checkbox" name = "c1" value = "cheese">Cheese</input>
+            <input type = "checkbox" name = "j1" value = "Jalapeno">Jalapeno</input>
+            
+            <br><br>
+            <input type = "submit" value = "Order">
+    
+    </form>
+    {{ m }}
+    <center>
+</body>
+</html>
+

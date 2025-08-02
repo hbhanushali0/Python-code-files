@@ -1,0 +1,12 @@
+review,label
+nice hotel good deal !!!,pos
+ok nothing special ,pos
+"great stay, wonderful time",pos
+quality hotel excellent staff,neg
+poor staff :(,neu
+horrible customer service,neg
+"great hotel, terrible staff",pos
+bad air conditioner,neg
+awesome hotel not ok :(,pos
+reasonably priced hotel,pos
+"hotel, nopes its hospital :<",neu

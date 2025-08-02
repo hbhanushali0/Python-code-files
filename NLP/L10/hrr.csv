@@ -1,0 +1,16 @@
+,review,sentiment
+0,nice hotel good deal !!!,pos
+1,ok nothing special ,pos
+2,"great stay, wonderful time",pos
+3,quality hotel excellent staff,pos
+4,poor staff :(,neg
+5,horrible customer service,neg
+6,"great hotel, terrible staff",neg
+7,bad air conditioner,neg
+8,awesome hotel not ok :(,neu
+9,reasonably priced hotel,pos
+10,"hotel, nopes its hospital :<",neu
+11,2 + 2 = 4,neu
+12,2 + 2 is good,pos
+13,kamal sir teaches good,pos
+14,teach good,pos

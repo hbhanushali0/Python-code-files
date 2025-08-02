@@ -1,0 +1,12 @@
+review,label,polarity_scores,sia_label
+nice hotel good deal !!!,pos,"{'neg': 0.0, 'neu': 0.313, 'pos': 0.687, 'compound': 0.7633}",pos
+ok nothing special ,pos,"{'neg': 0.414, 'neu': 0.183, 'pos': 0.403, 'compound': -0.015}",neu
+"great stay, wonderful time",pos,"{'neg': 0.0, 'neu': 0.204, 'pos': 0.796, 'compound': 0.8316}",pos
+quality hotel excellent staff,neg,"{'neg': 0.0, 'neu': 0.448, 'pos': 0.552, 'compound': 0.5719}",pos
+poor staff :(,neu,"{'neg': 0.857, 'neu': 0.143, 'pos': 0.0, 'compound': -0.7184}",neg
+horrible customer service,neg,"{'neg': 0.636, 'neu': 0.364, 'pos': 0.0, 'compound': -0.5423}",neg
+"great hotel, terrible staff",pos,"{'neg': 0.337, 'neu': 0.217, 'pos': 0.446, 'compound': 0.25}",pos
+bad air conditioner,neg,"{'neg': 0.636, 'neu': 0.364, 'pos': 0.0, 'compound': -0.5423}",neg
+awesome hotel not ok :(,pos,"{'neg': 0.182, 'neu': 0.192, 'pos': 0.626, 'compound': 0.6826}",pos
+reasonably priced hotel,pos,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",neu
+"hotel, nopes its hospital :<",neu,"{'neg': 0.437, 'neu': 0.563, 'pos': 0.0, 'compound': -0.4767}",neg

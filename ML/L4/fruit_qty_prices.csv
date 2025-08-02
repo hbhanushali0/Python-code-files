@@ -1,0 +1,8 @@
+name,quantity,price
+Apple,1,3.5
+Apple,2,5
+Apple,3,nan
+Mango,1,4
+,2,6
+Mango,4,8
+nan,5,10

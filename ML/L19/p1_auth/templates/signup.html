@@ -1,0 +1,31 @@
+
+
+
+<html>
+    <head>
+        <title> Auth app </title>
+        <style>
+            * {font-size:40px}
+            </style>
+    </head>
+    <body>
+        <center>
+            <h1> Sign Up Page </h1>
+            <form action = "/signup" method = "POST">
+            <input type = "text" name = "un" placeholder = "enter username" required>
+                <br><br>
+                <input type = "password" name = "pw1" placeholder = "enter password" required>
+                    <br><br>
+                    <input type = "password" name = "pw2" placeholder = "repeat password" required>
+                        <br><br>
+                        <input type = "submit" value = "SignUp">
+                </form>
+            {{ msg }}
+            <a href = "{{ url_for("login")}}"> Login </a>
+            </center>
+        
+        </body>
+    
+    
+    </html>
+

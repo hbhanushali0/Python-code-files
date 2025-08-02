@@ -1,0 +1,23 @@
+
+<html>
+    <head>
+    <title> Email Subscription App </title>
+    <style>
+        *{ font-size:40px; } </style>
+    </head>
+    
+    <body>
+    <center>
+    <h1> Subscribe to NewsLetter </h1>
+    <form action = "/subs" method = "POST">
+        <input type = "text" name = "em" placeholder = "enter your email" required>
+            <br><br>
+            
+            <input type = "submit" value = "Subscribe" name = "btn">
+            <input type = "submit" value = "Unsubscribe" name = "btn">
+    
+    </form>
+    {{ msg }}
+    </center>
+    </body>
+    </html>

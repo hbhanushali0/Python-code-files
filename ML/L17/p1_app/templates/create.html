@@ -1,0 +1,52 @@
+
+<html>
+    <head>
+        <title> CRUD Operations App </title>
+        <style>
+            * { font-size: 40px;}
+            </style>
+            <script>
+                function validate(){
+                    var n = document.getElementById("id_name")
+                    var r = /^[A-Za-z]+$/
+                
+                    if (n.value.length < 2){
+                        alert("name should be atleast two letters ")
+                        n.value = ""
+                        n.focus()
+                        return false
+                    }
+                    if (! r.test(n.value)){
+                        alert("name should contaiun only letters ")
+                        n.value = ""
+                        n.focus()
+                        return false
+                    }
+                    return true
+                }
+            
+            </script>
+            
+        </head>
+    
+    <body>
+        <center>
+            <h1> Add Page </h1>
+            <a href = "/"> Home Page </a>
+            <br><br>
+            <form action = "/create" method = "POST" onsubmit = "return validate()">
+                <input type = "number" name = "r" placeholder = "enter rno" required>
+                    <br><br>
+                    <input type = "text" name = "n" placeholder = "enter your name" required id = "id_name">
+                        <br><br>
+                        
+                        <input type = "number" name = "m" placeholder = "enter your marks " min = 0 max = 100 required style = "width:500px">
+                            <br><br>
+                            
+                            <input type = "submit" value = "Save">
+                                <br><br>
+                                </form>
+            {{ msg }}
+            </center>
+        </body>
+    </html>

@@ -1,0 +1,25 @@
+<home>
+<head>
+<title> File Download </title>
+<style> 
+ body {backgrouond-color:azure;}
+ </style>
+ <body>
+<center>
+<form>
+    <input type="file" id="fileInput" onchange="handleFileSelect(event)">
+    <br>
+</form>
+<script>
+      function handleFileSelect(event) {
+      const files = event.target.files; // Get the selected files
+      
+      if (files.length === 0) {
+        console.log('No file selected');
+        return;
+      }
+</script>
+</center>
+</body>
+</head>   
+</home>

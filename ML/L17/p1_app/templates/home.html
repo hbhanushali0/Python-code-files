@@ -1,0 +1,35 @@
+
+<html>
+    <head>
+        <title> CRUD Operation App </title>
+        <style>
+            * {font-size:40px;}
+            </style>
+        </head>
+    <body>
+        
+        <center>
+            
+            <h1> Home Page </h1>
+            <a href = "{{url_for("create")}}"> Create Student </a>
+            <br><br>
+            <table border = 2>
+                {% for d in data %}
+
+                <tr>
+                    <td>{{ d[0] }} </td>
+                    <td> {{ d[1] }} </td>
+                    <td> {{ d[2] }} </td>
+                    
+                    <td> <a href = "{{url_for("delstu", id = d[0])}}" onclick = "return confirm('are you sure , you want to delete???')"> Delete </td>
+                    </tr>
+                
+                {% else %}
+                <tr>
+                <td> N data Found </td>
+                </tr>
+                {% endfor %}
+            </table>
+            </center>
+        </body>
+    </html>
